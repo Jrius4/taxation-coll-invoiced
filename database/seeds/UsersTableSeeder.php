@@ -25,7 +25,7 @@ class UsersTableSeeder extends Seeder
                     'name' => "Kazibwe Julius Junior",
                     'slug' => 'kazibwe-julius-junior',
                     'email' => "kazibwejuliusjunior.com",
-                    'password' => bcrypt('admin&&1010'),
+                    'password' => bcrypt('admins3cret'),
                     'bio' => $faker->text(rand(250, 300))
                 ],
                 [
