@@ -5,7 +5,7 @@
                 <div class="input-group">
                   <input type="text" class="form-control input-lg" value="{{ request('term') }}" name="term" placeholder="Search for...">
                   <span class="input-group-btn">
-                    <button class="btn btn-lg btn-default" type="submit">
+                    <button class="btn btn-md btn-default" type="submit">
                         <i class="fa fa-search"></i>
                     </button>
                   </span>
@@ -22,7 +22,7 @@
                     @foreach ($categories as $category)
                         <li>
                             <a href="{{ route('category', $category->slug) }}"><i class="fa fa-angle-right"></i> {{ $category->title }}</a>
-                            <span class="badge pull-right">{{ $category->posts->count() }}</span>
+                            <span class="badge badge-secondary pull-right">{{ $category->posts->count() }}</span>
                         </li>
                     @endforeach
                 </ul>
@@ -63,7 +63,7 @@
             <div class="widget-body">
                 <ul class="tags">
                     @foreach($tags as $tag)
-                        <li><a href="{{ route('tag', $tag->slug) }}">{{ $tag->name }}</a></li>
+                   <li><a href="{{ route('tag', $tag->slug) }}"> {{ $tag->name }}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -78,7 +78,7 @@
                     @foreach($archives as $archive)
                         <li>
                             <a href="{{ route('blog', ['month' => $archive->month, 'year' => $archive->year]) }}">{{ month_name($archive->month) . " " . $archive->year }}</a>
-                            <span class="badge pull-right">{{ $archive->post_count }}</span>
+                            <span class="badge  badge-primary pull-right">{{ $archive->post_count }}</span>
                         </li>
                     @endforeach
                 </ul>

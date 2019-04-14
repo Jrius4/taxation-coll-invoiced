@@ -4,6 +4,7 @@
 
     <div class="container">
         <div class="row">
+
             <div class="col-md-8">
                 @if (! $posts->count())
                     <div class="alert alert-warning">
@@ -18,7 +19,7 @@
                             @if ($post->image_url)
                                 <div class="post-item-image">
                                     <a href="{{ route('blog.show', $post->slug) }}">
-                                        <img src="{{ $post->image_url }}" alt="">
+                                        <img src="{{ $post->image_url }}" alt="" >
                                     </a>
                                 </div>
                             @endif
