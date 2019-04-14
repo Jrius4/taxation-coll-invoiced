@@ -7,7 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
     {{-- <link rel="stylesheet" href="/css/bootstrap.min.css"> --}}
-    <link rel="stylesheet" href="{{asset('/static/css/app.css')}}">
+    <link rel="stylesheet" href="/static/css/app.css">
     <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
@@ -86,7 +86,7 @@
     </footer>
 
     {{-- <script src="/js/bootstrap.min.js"></script> --}}
-    <script src="{{asset('/static/js/app.js')}}"></script>
-    <script src="{{asset('/static/js/jquery.min.js')}}"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
 </body>
 </html>
