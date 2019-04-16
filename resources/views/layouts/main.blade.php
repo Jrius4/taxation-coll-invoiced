@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body>
+  <div class="main-content-div">
     <header>
 
-        <nav class="navbar container-fluid navbar-expand-lg bg-transparent">
+        <nav class="navbar container-fluid navbar-expand-lg navbar-dark bg-transparent">
             <a class="navbar-brand" href="/">NDEBI TECH</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""> <i class="fa fa-bars" aria-hidden="true"></i> </span>
@@ -84,6 +85,7 @@
             </div>
         </div>
     </footer>
+  </div>
 
     {{-- <script src="/js/bootstrap.min.js"></script> --}}
     <script src="/static/js/app.js"></script>
