@@ -9,13 +9,16 @@
     {{-- <link rel="stylesheet" href="/css/bootstrap.min.css"> --}}
     <link rel="stylesheet" href="/static/css/app.css">
     <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
   <div class="main-content-div">
-    <header>
+    <div>
 
         <nav class="navbar container-fluid navbar-expand-lg navbar-dark bg-transparent">
-            <a class="navbar-brand" href="/">NDEBI TECH</a>
+            <a class="navbar-brand" href="/">
+              <img width="175px" height="75px" src="/img/Ndebi Tech Logo.png" alt="logo"/>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class=""> <i class="fa fa-bars" aria-hidden="true"></i> </span>
             </button>
@@ -23,10 +26,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Blog</a>
+                  <a class="nav-link" href="blog">Blog</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,7 +59,7 @@
 
       {{-- navigation bar --}}
         
-    </header>
+        </div>
 
  
 
@@ -90,5 +93,6 @@
     {{-- <script src="/js/bootstrap.min.js"></script> --}}
     <script src="/static/js/app.js"></script>
     <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/ScrollMagic.min.js"></script>
 </body>
 </html>

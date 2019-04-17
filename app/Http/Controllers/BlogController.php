@@ -12,6 +12,16 @@ use App\Tag;
 class BlogController extends Controller
 {
     protected $limit = 3;
+    public function landingPage()
+    {
+        $posts = Post::with('author', 'tags', 'category', 'comments')
+                    ->latestFirst()
+                    ->published()
+                    ->filter(request()->only(['term', 'year', 'month']))
+                    ->simplePaginate($this->limit);
+
+        return view("blog.landing-page", compact('posts'));
+    }
 
     public function index()
     {

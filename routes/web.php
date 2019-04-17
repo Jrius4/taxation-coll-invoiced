@@ -11,6 +11,10 @@
 |
 */
 Route::get('/', [
+    'uses' => 'BlogController@landingPage',
+    'as'   => 'landing-page'
+]);
+Route::get('/blog', [
     'uses' => 'BlogController@index',
     'as'   => 'blog'
 ]);
