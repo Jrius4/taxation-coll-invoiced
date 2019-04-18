@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>NDEBITECH</title>
-    <link rel="shortcut icon" href="/img/ndebi-favi.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/ndebi-tech-favi-blue.png" type="image/x-icon">
 
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
