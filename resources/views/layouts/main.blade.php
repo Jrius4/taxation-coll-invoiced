@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MyBlog | My Awesome Blog</title>
+    <title>NDEBITECH</title>
     <link rel="shortcut icon" href="/img/ndebi-favi.png" type="image/x-icon">
 
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
