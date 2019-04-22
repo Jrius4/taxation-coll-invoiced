@@ -14,7 +14,7 @@
                   <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="blog">Blog</a>
+                  <a class="nav-link" href="{{route('blog')}}">Blog</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link d-none" href="/services">Services</a>
@@ -59,7 +59,7 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="/create-value" tabindex="-1" aria-disabled="true">How create Value</a>
+                    <a class="nav-link" href="{{route('create-value')}}" tabindex="-1" aria-disabled="true">How create Value</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="/how-we-work" tabindex="-1" aria-disabled="true">How we Work</a>
