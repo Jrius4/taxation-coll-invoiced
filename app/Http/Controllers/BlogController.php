@@ -75,6 +75,7 @@ class BlogController extends Controller
 
     public function category(Category $category)
     {
+        $title = '';
         $categoryName = $category->title;
 
         $posts = $category->posts()
@@ -83,7 +84,7 @@ class BlogController extends Controller
                           ->published()
                           ->simplePaginate($this->limit);
 
-         return view("blog.index", compact('posts', 'categoryName'));
+         return view("blog.index", compact('posts', 'categoryName','title'));
     }
 
     public function tag(Tag $tag)
