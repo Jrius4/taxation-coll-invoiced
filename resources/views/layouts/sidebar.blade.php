@@ -1,4 +1,4 @@
-<div class="col-md-4">
+<div class="col-lg-4 col-md-12">
     <aside class="right-sidebar">
         <div class="search-widget">
             <form action="{{ route('blog') }}">

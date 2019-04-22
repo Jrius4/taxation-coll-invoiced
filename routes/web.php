@@ -14,6 +14,26 @@ Route::get('/', [
     'uses' => 'BlogController@landingPage',
     'as'   => 'landing-page'
 ]);
+Route::get('/services', [
+    'uses' => 'BlogController@services',
+    'as'   => 'services'
+]);
+Route::get('/about', [
+    'uses' => 'BlogController@about',
+    'as'   => 'about'
+]);
+Route::get('/contact-us', [
+    'uses' => 'BlogController@contactUs',
+    'as'   => 'contact-us'
+]);
+Route::get('/create-value', [
+    'uses' => 'BlogController@createValue',
+    'as'   => 'create-value'
+]);
+Route::get('/how-we-work', [
+    'uses' => 'BlogController@howWeWork',
+    'as'   => 'how-we-work'
+]);
 Route::get('/blog', [
     'uses' => 'BlogController@index',
     'as'   => 'blog'

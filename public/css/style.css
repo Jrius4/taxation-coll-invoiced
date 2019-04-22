@@ -1,6 +1,7 @@
 body {
     background-color: #0000ff;
     overflow: auto;
+    color: #000000;
 
 
 }
@@ -511,5 +512,17 @@ z-index: -1;
         height: 500px;
     }
     
+ 
     
+    h4 {
+      text-align: center;
+      text-transform: uppercase;
+
+    }
+    
+    p {
+      text-indent: 50px;
+    
+      letter-spacing: 1px;
+    }
   

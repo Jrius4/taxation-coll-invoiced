@@ -8,7 +8,9 @@
     <div class="container">
         <div class="row">
 
-            @include('layouts.inc.blogs')
+            <div class="col-md-8">
+              Contact Us
+            </div>
 
             @include('layouts.sidebar')
         </div>

@@ -16,23 +16,61 @@
                 <li class="nav-item">
                   <a class="nav-link" href="blog">Blog</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link d-none" href="/services">Services</a>
+                  </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Services
                   </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-menu row" aria-labelledby="navbarDropdown">
+                      <h5 class="text-center">All Services</h5>
+                    <div class="row">
+                      <div class="col m-2 w-100">
+                          <h5 class="text-center">Section One</h5>
+                        <ul class="navbar-nav mr-auto">
+                            <li  class="nav-item">
+                                <a class="dropdown-item" href="/services">Something else here</a>
+                            </li>
+                            <li  class="nav-item">
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                            <li  class="nav-item">
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul>
+                      </div>
+                      <div class="col m-2 w-100">
+                        <h5 class="text-center">Section Two</h5>
+                          <ul class="navbar-nav mr-auto">
+                              <li  class="nav-item">
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                              </li>
+                              <li  class="nav-item">
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                              </li>
+                              <li  class="nav-item">
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                              </li>
+                          </ul>
+                      </div>
+                    </div>
                   </div>
                 </li>
+                
                 <li class="nav-item">
-                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">About</a>
-                </li>
+                    <a class="nav-link" href="/create-value" tabindex="-1" aria-disabled="true">How create Value</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="/how-we-work" tabindex="-1" aria-disabled="true">How we Work</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about" tabindex="-1" aria-disabled="true">About</a>
+                      </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    <a class="nav-link" href="/contact-us" tabindex="-1" aria-disabled="true">Contact Us</a>
                   </li>
               </ul>
               <form class="form-inline my-1 my-lg-0"  action="{{ route('blog') }}">

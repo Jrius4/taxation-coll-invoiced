@@ -12,26 +12,65 @@ use App\Tag;
 class BlogController extends Controller
 {
     protected $limit = 3;
+    protected $limitHone = 2;
+
     public function landingPage()
     {
+        
         $posts = Post::with('author', 'tags', 'category', 'comments')
                     ->latestFirst()
                     ->published()
                     ->filter(request()->only(['term', 'year', 'month']))
-                    ->simplePaginate($this->limit);
+                    ->simplePaginate($this->limitHone);
 
         return view("blog.landing-page", compact('posts'));
     }
 
+    public function createValue()
+    {
+        $title = '<h4>How <span>NDEBI <img src="/img/ndebi-favi.png" alt="" width="25px" height="25px"/> TECH</span> <span></span> creates value for its clients</h4>';
+        
+
+        return view("blog.create-value", compact('title'));
+    }
+    public function howWeWork()
+    {
+        $title = '<h4>How <span>NDEBI <img src="/img/ndebi-favi.png" alt="" width="25px" height="25px"/> TECH</span> <span></span> Works</h4>';
+        
+
+        return view("blog.how-we-work", compact('title'));
+    }
+    public function services()
+    {
+        $title = '<h4><span>NDEBI <img src="/img/ndebi-favi.png" alt="" width="25px" height="25px"/> TECH</span> <span></span> services</h4>';
+        
+
+        return view("blog.services", compact('title'));
+    }
+    public function about()
+    {
+        $title = '<h4>about us</h4>';
+       
+        return view("blog.about",compact('title'));
+    }
+    public function contactUs()
+    {
+        $title = '<h4>contact us</h4>';
+
+        
+        return view("blog.contactUs",compact('title'));
+    }
+
     public function index()
     {
+        $title='<h4><span>NDEBI <img src="/img/ndebi-favi.png" alt="" width="25px" height="25px"/> TECH</span> <span></span> Blog</h4>';
         $posts = Post::with('author', 'tags', 'category', 'comments')
                     ->latestFirst()
                     ->published()
                     ->filter(request()->only(['term', 'year', 'month']))
                     ->simplePaginate($this->limit);
 
-        return view("blog.index", compact('posts'));
+        return view("blog.index", compact('posts','title'));
     }
 
     public function category(Category $category)

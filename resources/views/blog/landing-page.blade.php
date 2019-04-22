@@ -239,7 +239,9 @@ Seeding and analysis.
 
     <div class="market2">
         <div class="filter-market">
-            <div class="col-lg-12 bg-info" style="height:300px"></div>
+            <div class="col-lg-12 bg-info">
+             @include('layouts.inc.landingblogs')
+            </div>
             <div class="col-lg-12" style="height:300px"></div>
             <div class="col-lg-12 bg-primary" style="height:300px"></div>
             <div class="col-lg-12  d-flex justify-content-center align-content-center" style="height:300px">
