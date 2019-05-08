@@ -24,7 +24,7 @@
     </div>
 
     <div class="comment-footer padding-10">
-        <h3>Leave a comment</h3>
+        <h3>Leave a comments</h3>
 
         @if(session('message'))
             <div class="alert alert-info">
