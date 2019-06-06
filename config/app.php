@@ -171,6 +171,7 @@ return [
         GrahamCampbell\Markdown\MarkdownServiceProvider::class,
         Laratrust\LaratrustServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        Barryvdh\DomPDF\ServiceProvider::class,
 
 
         /*
@@ -244,6 +245,7 @@ return [
         'Markdown' => GrahamCampbell\Markdown\Facades\Markdown::class,
         'Laratrust'   => Laratrust\LaratrustFacade::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'PDF' => Barryvdh\DomPDF\Facade::class,
 
     ],
 
